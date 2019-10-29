@@ -62,7 +62,7 @@ export default {
   flex-direction: column;
 }
 .ProfileContainerUpper{
-  padding:32px;
+  padding:48px;
 }
 .Slogan {
   font-weight: 800;

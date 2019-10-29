@@ -19,7 +19,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .Career{
     font-size:12px;
     margin-bottom:10px;
