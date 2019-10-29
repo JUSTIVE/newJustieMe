@@ -1,0 +1,7 @@
+#app{
+    --global-radius:48px;
+    --accent:#6bdfb3e6;
+    --dark:hsla(210, 29%, 24%, 0.8);
+    --invertable-text:hsla(210, 29%, 24%, 0.8);
+    --invertable-text-negative:hsla(0, 0%, 100%,0.85);
+}
