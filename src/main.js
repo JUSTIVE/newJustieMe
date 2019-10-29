@@ -3,7 +3,7 @@ import App from './App.vue'
 import store from './store'
 
 Vue.config.productionTip = false
-import '@/assets/global.css'
+import '@/assets/global.scss'
 new Vue({
   store,
   render: h => h(App)

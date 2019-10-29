@@ -11,8 +11,9 @@ export default {
 </script>
 
 <style lang="scss">
-@import url("../../assets/global.css");
 .Project{
-    
+    @include ContentCard;
+    height:65vh;
+    margin-top:10vh;
 }
 </style>

@@ -46,12 +46,12 @@ export default {
 
 <style lang="scss">
 .Profile {
+  @include Card;
+  margin-top:10vh;
+  position:absolute;
   display: flex;
-  height: 100%;
-  width: 30%;
-  background: white;
-  border-radius:var(--global-radius);
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.08), 0 15px 12px rgba(0, 0, 0, 0.12);
+  height: 80vh;
+  width: 24vw;
   text-align: left;
   min-width: 400px;
 }

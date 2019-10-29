@@ -1,18 +1,15 @@
 <template>
   <div class="Pangea">
-    <Profile/>
-    <Contents/>
+    
   </div>
 </template>
 
 <script>
-import Profile from './Profile/Profile.vue';
-import Contents from './Contents.vue';
+
 export default {
   name: 'Pangea',
   components:{
-    Profile,
-    Contents
+    
   },
   props: {
     msg: String
@@ -27,5 +24,6 @@ export default {
   display:flex;
   border-radius:var(--global-radius);
   margin:10vh 10vw;
+  // overflow: hidden;
 }
 </style>
