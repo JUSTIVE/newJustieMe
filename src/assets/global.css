@@ -1,0 +1,19 @@
+#app{
+    --global-radius:48px;
+    --accent:#6bdfb3e6;
+}
+
+[data-theme^="light"]{
+    --paper-background:white;
+    --paper-foreground:white;
+    --paper-foreground2:white;
+    --invertable-text:hsla(210, 29%, 24%, 0.8);
+    --invertable-text-negative:hsla(0, 0%, 100%,0.85);
+}
+[data-theme^="dark"]{
+    --paper-background:#1d1d1d;
+    --paper-foreground:#2f2f2f;
+    --paper-foreground2:#343434;
+    --invertable-text:hsla(0, 0%, 100%,0.85);
+    --invertable-text-negative:hsla(210, 29%, 24%, 0.8);
+}

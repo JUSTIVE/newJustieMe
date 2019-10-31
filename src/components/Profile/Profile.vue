@@ -16,8 +16,7 @@
         <Career
           v-for="(item, index) in CareerData"
           :key="index"
-          :Duration="item.duration"
-          :Description="item.spec"
+          :item="item"
         />
       </div>
     </div>
@@ -46,18 +45,15 @@ export default {
 
 <style lang="scss">
 .Profile {
-  @include Card;
-  margin-top:10vh;
+  @include initializer;
   position:absolute;
   display: flex;
   height: 80vh;
-  width: 24vw;
   text-align: left;
   min-width: 400px;
 }
 .ProfileContainer {
   flex: 1;
-  justify-content: space-between;
   display: flex;
   flex-direction: column;
 }
@@ -68,23 +64,23 @@ export default {
   font-weight: 800;
   font-size: 64px;
   color: var(--accent);
+  line-height:64px;
 }
 .Name {
   margin-bottom: 8px;
   font-weight: bold;
   opacity: 0.9;
-  font-size: 14px;
+  font-size: 14px; 
 }
 .CareerList {
-  background: var(--dark);
-  padding:32px;
+  padding:48px;
   border-radius:var(--global-radius);
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   overflow: scroll;
   &::-webkit-scrollbar {
     display: none;
   }
 }
+
 </style>

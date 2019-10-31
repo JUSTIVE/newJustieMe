@@ -1,10 +1,14 @@
 <template>
   <div class="Career">
+    <div class="lineDecoration"/>
     <div class="Duration">
-        {{Duration}}
+        {{item.duration}}
     </div>
     <div class="Description">
-        {{Description}}
+        {{item.spec}}
+    </div>
+    <div class="Location">
+        {{item.location}}
     </div>
   </div>
 </template>
@@ -13,20 +17,26 @@
 export default {
     name:"Career",
     props:{
-        Duration:String,
-        Description:String
+        item:Object
     }
 }
 </script>
 
 <style lang="scss">
 .Career{
+    font-weight:bold;
     font-size:12px;
-    margin-bottom:10px;
-    color:var(--invertable-text-negative);
+    margin-bottom:14px;
+    color:var(--invertable-text);
+    border-left: solid 2px var(--accent);
+    padding-left:8px;
 }
 .Duration{
+    font-size:13px;
     font-weight:bold;
     color:var(--accent);
+}
+.Location{
+    font-weight: 400;
 }
 </style>

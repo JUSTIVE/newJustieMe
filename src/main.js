@@ -3,8 +3,9 @@ import App from './App.vue'
 import store from './store'
 
 Vue.config.productionTip = false
-import '@/assets/global.scss'
+import '@/assets/global.css'
 new Vue({
   store,
   render: h => h(App)
 }).$mount('#app')
+

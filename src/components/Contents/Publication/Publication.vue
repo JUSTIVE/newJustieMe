@@ -1,19 +1,17 @@
 <template>
-  <div class="Project">
+  <div class="Publication">
       
   </div>
 </template>
 
 <script>
 export default {
-    name:"Project"
+    name:"Publication"
 }
 </script>
 
 <style lang="scss">
-.Project{
+.Publication{
     @include ContentCard;
-    height:65vh;
-    margin-top:10vh;
 }
 </style>
