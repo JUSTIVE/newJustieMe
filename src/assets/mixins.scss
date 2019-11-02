@@ -5,6 +5,7 @@
 }
 @mixin ContentCard{
     @include Card;
+    box-shadow: 0 8px 19px rgba(0, 0, 0, 0.08), 0 7px 6px rgba(0, 0, 0, 0.12);
     background:var(--paper-foreground2);
     width:100%;
     margin-bottom:32px;
