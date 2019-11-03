@@ -14,7 +14,7 @@ export default {
     },
     data(){
         return{
-            isDarkMode:false
+            isDarkMode:true
         }
     },
     created(){

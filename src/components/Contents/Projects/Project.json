@@ -3,7 +3,7 @@
     "projects":[
         {   
             "category":"Web Projects",
-            "projects":[
+            "project":[
                 {
                     "name":"Electrotube Music",
                     "url":"https://github.com/JUSTIVE/ElectronTube-Music",
@@ -11,10 +11,38 @@
                     "language":["javascript","html"]
                 },
                 {
-                    "name":"Electrotube Music",
-                    "url":"https://github.com/JUSTIVE/ElectronTube-Music",
+                    "name":"JustieMe",
+                    "url":"https://github.com/JUSTIVE/justieMe",
                     "description":"Electron version of YouTubeMusic",
-                    "language":["javascript","html"]
+                    "language":["Vue","css","html","javascript"]
+                }
+            ]
+        },
+        {   
+            "category":"Dynamic Simulations",
+            "project":[
+                {
+                    "link":"https://github.com/JUSTIVE/Position-Based-Dynamics",
+                    "name":"Position Based Dynamics",
+                    "description":"Position Based Dynamics in Unity, but with GPGPU approach",
+                    "language":["csharp"]
+                },
+                {
+                    "link":"https://github.com/JUSTIVE/GPU-Cloth-Simulation",
+                    "name":"GPU-Cloth-Simulation",
+                    "description":"GPU Mass-Spring Simulation in Unity",
+                    "language":["csharp","shaderlab"]
+                }
+            ]
+        },
+        {
+            "category":"Mobile Applications",
+            "project":[
+                {
+                    "link": "https://github.com/JUSTIVE/Flutters",
+                    "name": "Flutters",
+                    "description": "flutter challenges, tests, and so on",
+                    "language": ["dart"]
                 }
             ]
         }

@@ -1,6 +1,7 @@
 #app{
     --global-radius:48px;
     --accent:#6bdfb3e6;
+    --accent-alpha:#6bdfb366;
 }
 
 [data-theme^="light"]{
