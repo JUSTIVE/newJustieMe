@@ -26,8 +26,10 @@ export default {
     border-radius: 16px;
     padding:8px;
     transition:all .3s cubic-bezier(.25,.8,.25,1);
+    background:var(--paper-foreground2);
     &:hover{
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.12);
+        background:var(--paper-foreground2-hover);
     }
     
 }

@@ -8,6 +8,7 @@
     --paper-background:white;
     --paper-foreground:white;
     --paper-foreground2:white;
+    --paper-foreground2-hover:hsla(0,0%,99%);
     --invertable-text:hsla(210, 29%, 24%, 0.8);
     --invertable-text-negative:hsla(0, 0%, 100%,0.85);
 }
@@ -15,6 +16,8 @@
     --paper-background:#1d1d1d;
     --paper-foreground:#2f2f2f;
     --paper-foreground2:#343434;
+    --paper-foreground2-hover:#3f3f3f;
     --invertable-text:hsla(0, 0%, 100%,0.85);
     --invertable-text-negative:hsla(210, 29%, 24%, 0.8);
+    
 }
