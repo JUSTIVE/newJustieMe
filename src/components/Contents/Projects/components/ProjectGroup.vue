@@ -33,4 +33,9 @@ export default {
     font-weight: bold;
     color:var(--accent);
 }
+@media screen and (max-width: 800px) {
+    .ProjectGroup{
+        padding:16px 0px;
+    }
+}
 </style>

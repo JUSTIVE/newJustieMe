@@ -21,7 +21,7 @@ export default {
 
 <style lang="scss">
 .SingleProject{
-    display:inline-flex;
+    display:flex;
     flex:1;
     border-radius: 16px;
     padding:8px;
@@ -47,13 +47,22 @@ export default {
 }
 .ProjectIcon{
     box-shadow: 0 2px 4px var(--accent-alpha), 0 1px 3px var(--accent-alpha);
-    width:48px;
-    height:48px;
+    min-width:48px;
+    width:48px!important;
+    height:48px!important;
     border-radius: 16px;
     background:var(--accent);
     transition:all .3s cubic-bezier(.25,.8,.25,1);
     &:hover{
         box-shadow: 0 8px 19px var(--accent-alpha), 0 7px 6px var(--accent-alpha);
+    }
+}
+@media screen and (max-width: 800px) {
+    .SingleProject{
+        padding:8px;
+    }
+    .ProjectText{
+        font-size:12px;
     }
 }
 </style>
