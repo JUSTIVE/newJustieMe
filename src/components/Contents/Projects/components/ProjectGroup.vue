@@ -22,16 +22,17 @@ export default {
 
 <style lang="scss">
 .ProjectGroup{
-    padding:16px;
+    // padding:16px;
     display:flex;
     flex-direction: column;
 }
 .ProjectList{
-    padding:16px 0px;
+    padding:16px 8px;
 }
 .categoryTitle{
     font-weight: bold;
-    color:var(--accent);
+    padding-left:16px;
+    color:var(--invertable-text);
 }
 @media screen and (max-width: 800px) {
     .ProjectGroup{

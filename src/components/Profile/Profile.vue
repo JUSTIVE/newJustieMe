@@ -4,12 +4,13 @@
       <div class="ProfileContainerUpper">
         
         <div class="Slogan">
-          Familiar
-          <br />with
-          <br />Novelty
+          FAMILIAR<br/>WITH<br/>NOVELTY
         </div>
         <br />
         <div class="Name">김민상 / KIM MIN SANG</div>  
+        <div class="description">
+          {{description}}
+        </div>
       </div>
       
       <div class="CareerList">
@@ -33,11 +34,13 @@ export default {
   },
   data() {
     return {
-      CareerData: Object
+      CareerData: Object,
+      description: String
     };
   },
   created() {
     this.CareerData = CareerData.CareerData;
+    this.description = CareerData.description;
     console.log(this.CareerData);
   }
 };
@@ -48,27 +51,37 @@ export default {
   @include initializer;
   position:absolute;
   display: flex;
-  height: 80vh;
+  
+  height: 45vh;
+  width:65%;
   text-align: left;
-  min-width: 400px;
+  background:#FF495C;
+  // min-width: 400px;
+}
+.description{
+  font-size: 12px;
+  color:white;
 }
 .ProfileContainer {
   flex: 1;
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
 }
 .ProfileContainerUpper{
   padding:48px;
+  flex:1;
 }
 .Slogan {
+  word-break: keep-all;
   font-weight: 800;
   font-size: 64px;
-  color: var(--accent);
+  color: var(--subtle-white);
   line-height:64px;
 }
 .Name {
   margin-bottom: 8px;
   font-weight: bold;
+  color: var(--subtle-white);
   opacity: 0.9;
   font-size: 14px; 
 }

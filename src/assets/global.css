@@ -1,7 +1,8 @@
 #app{
-    --global-radius:48px;
+    --global-radius:0px;
     --accent:#6bdfb3e6;
     --accent-alpha:#6bdfb366;
+    --subtle-white:rgba(255,255,255,0.95)
 }
 
 [data-theme^="light"]{

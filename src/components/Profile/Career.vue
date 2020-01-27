@@ -27,14 +27,14 @@ export default {
     font-weight:bold;
     font-size:12px;
     margin-bottom:14px;
-    color:var(--invertable-text);
-    border-left: solid 2px var(--accent);
+    color: var(--subtle-white);
+    border-left: solid 2px var(--subtle-white);
     padding-left:8px;
 }
 .Duration{
     font-size:13px;
-    font-weight:bold;
-    color:var(--accent);
+    
+    color: var(--subtle-white);
 }
 .Location{
     font-weight: 400;

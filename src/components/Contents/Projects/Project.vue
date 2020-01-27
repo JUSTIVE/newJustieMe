@@ -30,15 +30,21 @@ export default {
 <style lang="scss">
 .Project{
     @include ContentCard;
+    background:#FFD166;
     height:auto;
     display:flex;
+    flex-direction: column;
+    height:45%;
+  -ms-overflow-style: none; 
+  ::-webkit-scrollbar{
+  display: none;
 }
-.leftArea{
-  width:25%;
 }
+
 .heading{
   align-self: center;
   padding:32px;
+  padding-bottom: 16px;
   color:var(--invertable-text);
   font-size:28px;
   line-height:30px;
@@ -47,9 +53,13 @@ export default {
 }
 .rightArea{
   flex:1;
-  padding:32px;
+  padding:0px 16px;
   text-align: start;
+  overflow: hidden;
+  // overflow-y: scroll;
+  position: absolute;
 }
+
 @media screen and (max-width: 800px) {
   .Project{
     flex-direction: column;

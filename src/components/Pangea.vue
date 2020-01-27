@@ -1,17 +1,24 @@
 <template>
   <div class="Pangea">
-    <Profile/>
+    <div id="leftarea">
+      <Profile/>
+      <ArtArea/>
+    </div>
+    <div id="rightarea">
       <Contents/>
+    </div>
   </div>
 </template>
 
 <script>
 import Profile from './Profile/Profile.vue';
+import ArtArea from './ArtArea/ArtArea.vue';
 import Contents from './Contents/Contents.vue';
 export default {
   name: 'Pangea',
   components:{
     Profile,
+    ArtArea,
     Contents
   },
   props: {
@@ -24,13 +31,17 @@ export default {
 .Pangea{
   @include initializer;
   @include Card;
-  width:80vw;
-  height:80vh;
+  width:100vw;
+  height:100vh;
   display:flex;
   border-radius:var(--global-radius);
-  margin:10vh 10vw;
-  padding:10px 0px 0px 10px;
   overflow: hidden;
+}
+#leftarea{
+  width:65%;
+}
+#rightarea{
+  width:35%;
 }
 @media screen and (max-width: 800px) {
   .Pangea{

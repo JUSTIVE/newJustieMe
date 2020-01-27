@@ -14,7 +14,7 @@ export default {
     },
     data(){
         return{
-            isDarkMode:true
+            isDarkMode:false
         }
     },
     created(){
@@ -32,10 +32,10 @@ export default {
 </script>
 
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Google+Sans:100,300,400,500,700,900,100i,300i,400i,500i,700i,900i");
+// @import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap");
 #app {
-    font-family: "Open Sans", "Noto Sans KR", sans-serif;
+    font-family: "Google Sans", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
