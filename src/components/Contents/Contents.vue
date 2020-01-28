@@ -20,12 +20,6 @@ export default {
 <style lang="scss">
 .Contents{
   @include initializer;
-  // margin-left:400px;
-  height: 100vh;
-  width: 100%;
-  // margin-top:-10px;
-  // padding:16px 16px;
-  // padding-bottom:32px;
   overflow: scroll;
   &::-webkit-scrollbar{
       display: none;

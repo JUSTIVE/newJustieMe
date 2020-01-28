@@ -41,7 +41,7 @@ export default {
     font-size:12px;
     justify-content:space-around;
     padding-left:8px;
-    color:var(--invertable-text);
+    color:var(--subtle-white);
     .ProjectName{
         font-weight:bold;
     }
@@ -52,7 +52,7 @@ export default {
     width:48px!important;
     height:48px!important;
     border-radius: 16px;
-    background:var(--invertable-text);
+    background:var(--subtle-white);
     transition:all .3s cubic-bezier(.25,.8,.25,1);
     &:hover{
         box-shadow: 0 8px 19px var(--accent-alpha), 0 7px 6px var(--accent-alpha);

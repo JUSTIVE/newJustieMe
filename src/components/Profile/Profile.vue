@@ -7,7 +7,8 @@
           FAMILIAR<br/>WITH<br/>NOVELTY
         </div>
         <br />
-        <div class="Name">김민상 / KIM MIN SANG</div>  
+        <div class="intro">Hello, I'm</div>
+        <div class="Name">김민상 / Kim Min Sang</div>  
         <div class="description">
           {{description}}
         </div>
@@ -49,14 +50,13 @@ export default {
 <style lang="scss">
 .Profile {
   @include initializer;
-  position:absolute;
+  
   display: flex;
   
   height: 45vh;
-  width:65%;
+  width:100%;
   text-align: left;
-  background:#FF495C;
-  // min-width: 400px;
+
 }
 .description{
   font-size: 12px;
@@ -65,11 +65,14 @@ export default {
 .ProfileContainer {
   flex: 1;
   display: flex;
-  // flex-direction: column;
 }
 .ProfileContainerUpper{
   padding:48px;
   flex:1;
+}
+.intro{
+  color: var(--subtle-white);
+  font-weight:bold;
 }
 .Slogan {
   word-break: keep-all;

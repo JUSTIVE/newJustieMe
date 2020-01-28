@@ -40,6 +40,7 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: var(--invertable-text);
+    
     overflow: hidden;
     width: 100%;
     height: 100%;
@@ -50,7 +51,7 @@ body {
     height: 100vh;
     overflow: hidden;
     user-select: none;
-    background:var(--paper-background);
+    background:#1e2335;
 }
 
 </style>

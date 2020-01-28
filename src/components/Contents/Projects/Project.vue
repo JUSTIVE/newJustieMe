@@ -30,7 +30,6 @@ export default {
 <style lang="scss">
 .Project{
     @include ContentCard;
-    background:#FFD166;
     height:auto;
     display:flex;
     flex-direction: column;
@@ -45,19 +44,17 @@ export default {
   align-self: center;
   padding:32px;
   padding-bottom: 16px;
-  color:var(--invertable-text);
   font-size:28px;
   line-height:30px;
   font-weight: bold;
   text-align: start;
+  color:var(--subtle-white);
 }
 .rightArea{
   flex:1;
   padding:0px 16px;
   text-align: start;
-  overflow: hidden;
-  // overflow-y: scroll;
-  position: absolute;
+  overflow-y: scroll;
 }
 
 @media screen and (max-width: 800px) {

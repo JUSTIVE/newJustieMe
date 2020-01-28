@@ -1,12 +1,9 @@
 <template>
   <div class="Pangea">
-    <div id="leftarea">
+    
       <Profile/>
       <ArtArea/>
-    </div>
-    <div id="rightarea">
       <Contents/>
-    </div>
   </div>
 </template>
 
@@ -31,17 +28,13 @@ export default {
 .Pangea{
   @include initializer;
   @include Card;
-  width:100vw;
+  width:90vw;
   height:100vh;
   display:flex;
+  margin:5vw;
+  flex-direction:column;
   border-radius:var(--global-radius);
   overflow: hidden;
-}
-#leftarea{
-  width:65%;
-}
-#rightarea{
-  width:35%;
 }
 @media screen and (max-width: 800px) {
   .Pangea{

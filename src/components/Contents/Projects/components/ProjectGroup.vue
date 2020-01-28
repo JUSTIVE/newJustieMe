@@ -32,7 +32,7 @@ export default {
 .categoryTitle{
     font-weight: bold;
     padding-left:16px;
-    color:var(--invertable-text);
+    color:var(--subtle-white);
 }
 @media screen and (max-width: 800px) {
     .ProjectGroup{
