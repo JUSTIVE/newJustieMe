@@ -30,10 +30,10 @@ export default {
 <style lang="scss">
 .Project{
     @include ContentCard;
-    height:auto;
+    // height:auto;
     display:flex;
     flex-direction: column;
-    height:45%;
+    padding:16px;
   -ms-overflow-style: none; 
   ::-webkit-scrollbar{
   display: none;

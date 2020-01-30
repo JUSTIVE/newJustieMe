@@ -26,17 +26,20 @@ export default {
 .Career{
     font-weight:bold;
     font-size:12px;
-    margin-bottom:14px;
+    margin-right:14px;
     color: var(--subtle-white);
     border-left: solid 2px var(--subtle-white);
     padding-left:8px;
+    text-align: start;
+
 }
 .Duration{
     font-size:13px;
-    
     color: var(--subtle-white);
+    text-align: start;
 }
 .Location{
+    text-align: start;
     font-weight: 400;
 }
 </style>

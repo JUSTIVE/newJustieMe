@@ -22,7 +22,6 @@ export default {
 
 <style lang="scss">
 .ProjectGroup{
-    // padding:16px;
     display:flex;
     flex-direction: column;
 }

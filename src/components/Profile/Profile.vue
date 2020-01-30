@@ -10,49 +10,30 @@
         <div class="intro">Hello, I'm</div>
         <div class="Name">김민상 / Kim Min Sang</div>  
         <div class="description">
-          {{description}}
+          His research interests are in computer graphics, <br>physically-based modeling and simulation, android applications, and deep learning
         </div>
-      </div>
-      
-      <div class="CareerList">
-        <Career
-          v-for="(item, index) in CareerData"
-          :key="index"
-          :item="item"
-        />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import CareerData from "./Career.json";
-import Career from "./Career.vue";
+
 export default {
   name: "Profile",
-  components: {
-    Career
-  },
   data() {
     return {
-      CareerData: Object,
       description: String
     };
   },
-  created() {
-    this.CareerData = CareerData.CareerData;
-    this.description = CareerData.description;
-    console.log(this.CareerData);
-  }
+  
 };
 </script>
 
 <style lang="scss">
 .Profile {
   @include initializer;
-  
   display: flex;
-  
   height: 45vh;
   width:100%;
   text-align: left;
@@ -88,15 +69,6 @@ export default {
   opacity: 0.9;
   font-size: 14px; 
 }
-.CareerList {
-  padding:48px;
-  border-radius:var(--global-radius);
-  display: flex;
-  flex-direction: column;
-  overflow: scroll;
-  &::-webkit-scrollbar {
-    display: none;
-  }
-}
+
 
 </style>

@@ -22,7 +22,7 @@ export default {
   @include initializer;
   overflow: scroll;
   &::-webkit-scrollbar{
-      display: none;
+    display: none;
   }
 }
 @media screen and (max-width: 800px) {

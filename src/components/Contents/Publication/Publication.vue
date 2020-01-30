@@ -6,7 +6,7 @@
       </div>
     </div>
     <div class="rightArea">
-      <!-- <ProjectGroup v-for="(item, index) in data.publications" :key="index" :data="item"/> -->
+      <ProjectGroup v-for="(item, index) in data.publications" :key="index" :data="item"/>
     </div>
   </div>
 </template>

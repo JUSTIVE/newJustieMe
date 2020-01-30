@@ -32,24 +32,22 @@ export default {
 </script>
 
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css?family=Google+Sans:100,300,400,500,700,900,100i,300i,400i,500i,700i,900i");
-// @import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca|Open+Sans&display=swap');
 #app {
-    font-family: "Google Sans", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Lexend Deca', sans-serif;
     text-align: center;
     color: var(--invertable-text);
-    
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
 }
 body {
-    margin: 0px;
-    width: 100vw;
+    width:100vw;
     height: 100vh;
     overflow: hidden;
+    position: relative;
+    margin: 0px;
     user-select: none;
     background:#1e2335;
 }
