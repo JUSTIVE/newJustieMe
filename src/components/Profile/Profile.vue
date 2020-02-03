@@ -1,5 +1,6 @@
 <template>
   <div class="Profile">
+    <ArcTail/>
     <div class="ProfileContainer">
       <div class="ProfileContainerUpper">
         
@@ -14,13 +15,17 @@
         </div>
       </div>
     </div>
+    
   </div>
 </template>
 
 <script>
-
+import ArcTail from "./Arctail.vue"
 export default {
   name: "Profile",
+  components:{
+    ArcTail
+  },
   data() {
     return {
       description: String
@@ -34,21 +39,23 @@ export default {
 .Profile {
   @include initializer;
   display: flex;
-  height: 45vh;
-  width:100%;
+  height: 100%;
+  width:50%;
   text-align: left;
-
 }
 .description{
   font-size: 12px;
   color:white;
 }
 .ProfileContainer {
+  position:absolute;
+  padding:48px;
   flex: 1;
   display: flex;
 }
 .ProfileContainerUpper{
-  padding:48px;
+  background: var(--invert-text);
+  z-index: 999;
   flex:1;
 }
 .intro{
@@ -69,6 +76,15 @@ export default {
   opacity: 0.9;
   font-size: 14px; 
 }
-
+@media screen and (max-width: 800px){
+  .Profile {
+    height: 100%;
+    width:100%;
+  }
+  .Slogan {
+    font-size: 48px;
+    line-height:48px;
+  }
+}
 
 </style>

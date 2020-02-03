@@ -1,5 +1,6 @@
 <template>
   <div class="Artarea">
+    <div class="liner"/>
   </div>
 </template>
 
@@ -11,6 +12,15 @@ export default {
 
 <style>
 .Artarea{
-    background:#efeeee;
+  position: absolute;
+  /* background:#efeeee; */
+}
+.liner{
+  width:300px;
+  height:100px;
+  background:#efeeee;
+  border-radius: 50px;
+  transform: translate(50px,50px) rotateZ(135deg);
+  opacity: 0.5;
 }
 </style>

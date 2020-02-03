@@ -1,16 +1,18 @@
 <template>
     <div id="app">
-      <Pangea/>
+        <!-- <ArtArea/> -->
+        <Pangea/>
     </div>
 </template>
 
 <script>
 import Pangea from "./components/Pangea.vue";
-
+// import ArtArea from "./components/ArtArea/ArtArea.vue";
 export default {
     name: "app",
     components: {
-        Pangea
+        Pangea,
+        // ArtArea
     },
     data(){
         return{
@@ -37,10 +39,9 @@ export default {
     font-family: 'Lexend Deca', sans-serif;
     text-align: center;
     color: var(--invertable-text);
-    position: absolute;
     overflow-y: scroll;
-    top: 0;
-    left: 0;
+    width: 100vw;
+    height:100vh;
 }
 body {
     width:100vw;
