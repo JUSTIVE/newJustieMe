@@ -11,8 +11,6 @@
 
 <script>
 import Profile from './Profile/Profile.vue';
-// import Careers from './Profile/Careers/Careers.vue';
-// import ArtArea from './ArtArea/ArtArea.vue';
 import Contents from './Contents/Contents.vue';
 import ContentPanel from './Contents/ContentPanel.vue';
 export default {
@@ -34,12 +32,12 @@ export default {
 .Pangea{
   @include initializer;
   @include Card;
-  // position: absolute;
   width:70vw;
   height:70vh;
   margin:15vh 15vw;
   display:flex;
   border-radius:var(--global-radius);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 @media screen and (max-width: 800px) {
   .Pangea{
