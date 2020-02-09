@@ -32,9 +32,9 @@ export default {
 .Pangea{
   @include initializer;
   @include Card;
-  width:70vw;
-  height:70vh;
-  margin:15vh 15vw;
+  width:100vw;
+  height:100vh;
+  // margin:15vh 15vw;
   display:flex;
   border-radius:var(--global-radius);
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);

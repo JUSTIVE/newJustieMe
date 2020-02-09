@@ -39,7 +39,8 @@ export default {
     font-family: 'Lexend Deca', sans-serif;
     text-align: center;
     color: var(--invertable-text);
-    overflow-y: scroll;
+    // overflow-y: scroll;
+    overflow: hidden;
     width: 100vw;
     height:100vh;
 }
